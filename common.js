@@ -16,7 +16,7 @@ function fixSrcPath(filepath) {
 }
 
 function fixDestPath(filepath) {
-  return path.join(__dirname, '/meadows', filepath)
+  return path.join(__dirname, '/valley/meadows', filepath)
 }
 
 module.exports = {
