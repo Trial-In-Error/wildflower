@@ -16,10 +16,7 @@ function fixSrcPath(filepath) {
 }
 
 function fixDestPath(filepath) {
-    if(filepath[0] === '~') {
-        filepath = path.join(process.env.HOME, filepath.slice(1))
-    }
-    return path.join(__dirname, '/meadows', filepath.split(process.env.HOME).slice(1).join(''))
+  return path.join(__dirname, '/valley/meadows', filepath)
 }
 
 module.exports = {

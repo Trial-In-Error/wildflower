@@ -1,7 +1,7 @@
 const fse = require('fs-extra')
 const copy = require('recursive-copy')
 const path = require('path')
-const meadows = require('./meadows')
+const meadows = require('./valley/meadows.js')
 // The functions are named relative to gathering, not sowing
 // So we'll have to use them named in reverse
 const { fixSrcPath: fixDestPath, fixDestPath: fixSrcPath, logNoSuchFile } = require('./common')
