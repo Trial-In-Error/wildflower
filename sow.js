@@ -15,6 +15,7 @@ const copyOptions = {
 
 meadows.forEach((meadow) => {
     promises.push(copy(fixSrcPath(meadow.path), fixDestPath(meadow.path), copyOptions)
+      .then(() => console.log(`Copied ${fixSrcPath(meadow.path)} to ${fixDestPath(meadow.path)}`))
       .catch(logNoSuchFile))
 })
 
